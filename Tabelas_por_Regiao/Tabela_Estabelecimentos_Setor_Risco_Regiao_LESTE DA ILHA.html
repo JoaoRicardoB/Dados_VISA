@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Estabelecimentos por Região: LESTE DA ILHA</title>
+    <link rel="stylesheet" href="../../style.css"> <!-- Link para o arquivo style.css no diretório pai -->
+</head>
+<body>
+    <style type="text/css">
+      table {
+    border-collapse: collapse;
+    width: auto; /* Allow table to shrink to content, then center */
+    max-width: 90%; /* Prevent table from getting too wide, leaving some margin */
+    margin: 20px auto; /* Center the table itself */
+    background-color: #f9f9f9; /* Lighter background for tables */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for tables */
+    color: #333;
+    border: 1px solid #ddd; /* Explicit outer border for the entire table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 8px 12px;
+    text-align: center; /* Center text in cells */
+}
+
+th {
+    background-color: #c2c7f7; /* Slightly darker background for headers */
+    font-weight: bold;
+}
+
+.table-container,
+.chart-container {
+    margin-bottom: 20px;
+    overflow-x: auto; /* For horizontal scrolling on small screens */
+    padding: 15px; /* Add some padding around the content *within* the container */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    max-width: 900px; /* Keep container max-width slightly larger than table max-width */
+    margin: 20px auto; /* Center the container itself */
+    background-color: #f0f0f0; /* Keeping a light background for the container itself */}
+</style>
+<table id="T_dd515" class="dataframe">
+  <thead>
+    <tr>
+      <th class="index_name level0" >RISCO</th>
+      <th id="T_dd515_level0_col0" class="col_heading level0 col0" >I - Baixo</th>
+      <th id="T_dd515_level0_col1" class="col_heading level0 col1" >II - Médio</th>
+      <th id="T_dd515_level0_col2" class="col_heading level0 col2" >III - Alto</th>
+      <th id="T_dd515_level0_col3" class="col_heading level0 col3" >Total Setor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_dd515_level0_row0" class="row_heading level0 row0" >ALIMENTOS</th>
+      <td id="T_dd515_row0_col0" class="data row0 col0" >757</td>
+      <td id="T_dd515_row0_col1" class="data row0 col1" >751</td>
+      <td id="T_dd515_row0_col2" class="data row0 col2" >231</td>
+      <td id="T_dd515_row0_col3" class="data row0 col3" >1739</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row1" class="row_heading level0 row1" >ALTA</th>
+      <td id="T_dd515_row1_col0" class="data row1 col0" >0</td>
+      <td id="T_dd515_row1_col1" class="data row1 col1" >0</td>
+      <td id="T_dd515_row1_col2" class="data row1 col2" >7</td>
+      <td id="T_dd515_row1_col3" class="data row1 col3" >7</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row2" class="row_heading level0 row2" >AMBIENTAL</th>
+      <td id="T_dd515_row2_col0" class="data row2 col0" >49</td>
+      <td id="T_dd515_row2_col1" class="data row2 col1" >3</td>
+      <td id="T_dd515_row2_col2" class="data row2 col2" >4</td>
+      <td id="T_dd515_row2_col3" class="data row2 col3" >56</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row3" class="row_heading level0 row3" >DESCRIÇÃO DEPENDENTE</th>
+      <td id="T_dd515_row3_col0" class="data row3 col0" >0</td>
+      <td id="T_dd515_row3_col1" class="data row3 col1" >0</td>
+      <td id="T_dd515_row3_col2" class="data row3 col2" >129</td>
+      <td id="T_dd515_row3_col3" class="data row3 col3" >129</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row4" class="row_heading level0 row4" >INDEFINIDO</th>
+      <td id="T_dd515_row4_col0" class="data row4 col0" >44</td>
+      <td id="T_dd515_row4_col1" class="data row4 col1" >40</td>
+      <td id="T_dd515_row4_col2" class="data row4 col2" >52</td>
+      <td id="T_dd515_row4_col3" class="data row4 col3" >136</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row5" class="row_heading level0 row5" >INTERESSE</th>
+      <td id="T_dd515_row5_col0" class="data row5 col0" >826</td>
+      <td id="T_dd515_row5_col1" class="data row5 col1" >535</td>
+      <td id="T_dd515_row5_col2" class="data row5 col2" >758</td>
+      <td id="T_dd515_row5_col3" class="data row5 col3" >2119</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row6" class="row_heading level0 row6" >MEDICAMENTOS</th>
+      <td id="T_dd515_row6_col0" class="data row6 col0" >11</td>
+      <td id="T_dd515_row6_col1" class="data row6 col1" >1</td>
+      <td id="T_dd515_row6_col2" class="data row6 col2" >38</td>
+      <td id="T_dd515_row6_col3" class="data row6 col3" >50</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row7" class="row_heading level0 row7" >MÉDIA</th>
+      <td id="T_dd515_row7_col0" class="data row7 col0" >45</td>
+      <td id="T_dd515_row7_col1" class="data row7 col1" >142</td>
+      <td id="T_dd515_row7_col2" class="data row7 col2" >66</td>
+      <td id="T_dd515_row7_col3" class="data row7 col3" >253</td>
+    </tr>
+    <tr>
+      <th id="T_dd515_level0_row8" class="row_heading level0 row8" >TOTAL GERAL</th>
+      <td id="T_dd515_row8_col0" class="data row8 col0" >1732</td>
+      <td id="T_dd515_row8_col1" class="data row8 col1" >1472</td>
+      <td id="T_dd515_row8_col2" class="data row8 col2" >1285</td>
+      <td id="T_dd515_row8_col3" class="data row8 col3" >4489</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #200259; /* Updated header color */
+    color: #fff;
+    padding: 0.3rem 0; /* Decreased header padding further */
+    /* Removed position: relative as it's no longer needed for absolute positioning of the logo */
+    display: flex; /* Use flexbox for overall alignment */
+    align-items: center; /* Vertically align items within the header (logo and text container) */
+    justify-content: center; /* Horizontally center the main text block if logo is absolute */
+}
+
+/* Removed .header-logo CSS rule as the image is being removed */
+
+.header-text-container {
+    display: flex;
+    flex-direction: column; /* Stack h1 and p vertically */
+    align-items: center;   /* Center h1 and p horizontally */
+    flex-grow: 1; /* Allow this container to expand and fill space */
+}
+
+nav {
+    background-color: #341a92; /* Updated navigation bar color */
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2, h3, p {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* General table styling */
+table {
+    border-collapse: collapse;
+    width: auto; /* Allow table to shrink to content, then center */
+    max-width: 90%; /* Prevent table from getting too wide, leaving some margin */
+    margin: 20px auto; /* Center the table itself */
+    background-color: #f9f9f9; /* Lighter background for tables */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for tables */
+    color: #333;
+    border: 1px solid #ddd; /* Explicit outer border for the entire table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 8px 12px;
+    text-align: center; /* Center text in cells */
+}
+
+th {
+    background-color: #e2e2e2; /* Slightly darker background for headers */
+    font-weight: bold;
+}
+
+.table-container,
+.chart-container {
+    margin-bottom: 20px;
+    overflow-x: auto; /* For horizontal scrolling on small screens */
+    padding: 15px; /* Add some padding around the content *within* the container */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    max-width: 900px; /* Keep container max-width slightly larger than table max-width */
+    margin: 20px auto; /* Center the container itself */
+    background-color: #f0f0f0; /* Keeping a light background for the container itself */
+}
+
+.chart-container img { /* Make images inside chart-container responsive */
+    width: 70%;
+    height: auto;
+    display: block; /* Removes extra space below image */
+    margin: 0 auto;
+}
+
+/* New style for grouping two charts side-by-side */
+.chart-pair {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    margin-bottom: 20px;
+}
+
+.chart-pair img {
+    width: 48%; /* Roughly half, allowing for some space between them */
+    max-width: 100%;
+    height: auto;
+    margin: 1%; /* Small margin between images */
+}
+
+/* Override max-width for chart-container within the flowcharts section */
+#flowcharts .chart-container {
+    max-width: 100%; /* Use 100% of parent (main) width for flowcharts */
+}
+#flowcharts .chart-container img {
+    width: 96%;
+    height: 200px;
+    display: block; /* Removes extra space below image */
+    margin: 0 auto;}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #200259;
+    color: whitesmoke;
+}
+
+/* Botão de Voltar ao Topo */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #333; /* Add a dark-grey background on hover */
+}

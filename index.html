@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados VISA - Florianópolis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-text-container">
+            <h1>Análise de Dados VISA - Florianópolis</h1>
+            <p style="color: #fff;">Exploração e visualização de dados de estabelecimentos, CNAEs e níveis de risco.</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Visão Geral</a></li>
+            <li><a href="#cnae-analysis">Análise de CNAEs</a></li>
+            <li><a href="#sector-risk">Setor e Risco</a></li>
+            <li><a href="#regional-analysis">Análise Regional</a></li>
+            <li><a href="#top-cnaes">Top CNAEs por Setor</a></li>
+            <li><a href="#population-growth">Crescimento Populacional</a></li>
+            <li><a href="#flowcharts">Diagramas</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>1. Visão Geral dos CNAEs Sujeitos à VISA</h2>
+            <p>Esta seção apresenta uma visão geral sobre a distribuição dos CNAEs sujeitos à fiscalização da VISA.</p>
+            <div class="table-container">
+                <h3>Tabela de Análise de CNAEs VISA</h3>
+                <iframe src="./Tabela de Análise de CNAEs VISA.html" frameborder="0" width="100%" height="250px"></iframe>
+            </div>
+            <div class="chart-container">
+                <h3>CNAEs Sujeitos à VISA</h3>
+                <img src="./CNAEs Sujeitos à VISA.png" alt="CNAEs Sujeitos à VISA">
+                <h3>Número total de CNAEs = 1384</h3>
+            </div>
+        </section>
+
+        <section id="cnae-analysis">
+            <h2>2. Análise por Nível de Risco e Setor</h2>
+            <p>Detalhes sobre a distribuição de CNAEs e atividades por nível de risco.</p>
+            <div class="chart-container">
+                <h3>CNAEs/Atividades por Nível de Risco</h3>
+                <img src="./CNAEs Atividades por Nível de Risco.png" alt="CNAEs Atividades por Nível de Risco">
+            </div>
+            <div class="chart-container">
+                <h3>Distribuição de CNAEs/Atividades por Setor de Fiscalização</h3>
+                <img src="./Distribuicao de CNAEs por Setor de Fiscalizacao_BarChart.png" alt="Distribuição de CNAEs por Setor de Fiscalização">
+            </div>
+            <div class="table-container">
+                <h3>Tabela de Estabelecimentos por Setor</h3>
+                <iframe src="./Tabela de Estabelecimentos por Setor.html" frameborder="0" width="100%" height="400px"></iframe>
+            </div>
+        </section>
+
+        <section id="sector-risk">
+            <h2>3. Número de Estabelecimentos por Grau de Risco em Cada Setor</h2>
+            <p>Visão detalhada da distribuição de estabelecimentos em cada nível de risco para cada setor.</p>
+                        
+            <div class="chart-gallery">
+                <div class="chart-pair">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_ALIMENTOS.png" alt="Risco ALIMENTOS">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_MÉDIA.png" alt="Risco MÉDIA">
+                </div>
+                <div class="chart-pair">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_INTERESSE.png" alt="Risco INTERESSE">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_MEDICAMENTOS.png" alt="Risco MEDICAMENTOS">
+                </div>
+                <div class="chart-pair">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_DESCRIÇÃO DEPENDENTE.png" alt="Risco DESCRIÇÃO DEPENDENTE">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_INDEFINIDO.png" alt="Risco INDEFINIDO">
+                </div>
+                <div class="chart-pair">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_AMBIENTAL.png" alt="Risco AMBIENTAL">
+                    <img src="./Graficos_por_Setor/Grafico_Estabelecimentos_Risco_ALTA.png" alt="Risco ALTA">
+                </div>
+                
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Risco por Setor</h3>
+                    <iframe src="./Tabela_Consolidada_Risco_por_Setor.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="regional-analysis">
+            <h2>4. Análise Regional</h2>
+            <p>Distribuição de estabelecimentos por setor e risco para cada região.</p>
+            <div class="table-gallery">
+                <div class="table-container">
+                    <h3>Tabela de Estabelecimentos por Região: CENTRO</h3>
+                    <iframe src="./Tabelas_por_Regiao/Tabela_Estabelecimentos_Setor_Risco_Regiao_CENTRO.html" frameborder="0" width="100%" height="430px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela de Estabelecimentos por Região: SUL DA ILHA</h3>
+                    <iframe src="./Tabelas_por_Regiao/Tabela_Estabelecimentos_Setor_Risco_Regiao_SUL DA ILHA.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela de Estabelecimentos por Região: CONTINENTE</h3>
+                    <iframe src="./Tabelas_por_Regiao/Tabela_Estabelecimentos_Setor_Risco_Regiao_CONTINENTE.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela de Estabelecimentos por Região: NORTE DA ILHA</h3>
+                    <iframe src="./Tabelas_por_Regiao/Tabela_Estabelecimentos_Setor_Risco_Regiao_NORTE DA ILHA.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela de Estabelecimentos por Região: LESTE DA ILHA</h3>
+                    <iframe src="./Tabelas_por_Regiao/Tabela_Estabelecimentos_Setor_Risco_Regiao_LESTE DA ILHA.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Contagem de Tabacarias por Região</h3>
+                <img src="./Graficos_Gerais/Contagem_Tabacarias_por_Regiao.png" alt="Tabacarias por Região">
+            </div>
+        </section>
+
+        <section id="top-cnaes">
+            <h2>5. Top 5 CNAEs (Principal e Secundário) por Setor</h2>
+            <p>Identificação dos CNAEs mais frequentes por setor, com contagem e tipo.</p>
+            <div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: ALIMENTOS</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_ALIMENTOS.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: MÉDIA</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_MÉDIA.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: INTERESSE</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_INTERESSE.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: MEDICAMENTOS</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_MEDICAMENTOS.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: DESCRIÇÃO DEPENDENTE</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_DESCRIÇÃO DEPENDENTE.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: INDEFINIDO</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_INDEFINIDO.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: AMBIENTAL</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_AMBIENTAL.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+                <div class="table-container">
+                    <h3>Tabela Consolidada de Top CNAEs: ALTA</h3>
+                    <iframe src="./Tabelas_TOP_CNAEs/Tabela_CNAEs_Consolidados_Setor_ALTA.html" frameborder="0" width="100%" height="400px"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="population-growth">
+            <h2>6. Crescimento Populacional vs. Estabelecimentos</h2>
+            <p>Comparativo entre o crescimento populacional de Florianópolis e o número de estabelecimentos.</p>
+            <div class="chart-container">
+                <h3>Crescimento Populacional de Florianópolis (1970-2022)</h3>
+                <img src="./Graficos_Gerais/Crescimento_Populacional_Florianopolis.png" alt="Crescimento Populacional">
+            </div>
+            <div class="chart-container">
+                <h3>Crescimento Acumulado do Número de Estabelecimentos por Ano</h3>
+                <img src="./Graficos_Gerais/Crescimento_Acumulado_Estabelecimentos.png" alt="Crescimento Acumulado Estabelecimentos">
+            </div>
+            <div class="chart-container">
+                <h3>Distribuição da População por Região</h3>
+                <img src="./Populacao_por_regiao_barras.png" alt="População por Região">
+            </div>
+            
+        </section>
+
+        <section id="flowcharts">
+            <h2>7. Diagramas Setoriais de Risco por Região</h2>
+            <p>Visualizações da distribuição de risco por região dentro de cada setor.</p>
+            
+                <div class="chart-container">
+                    <h3>Diagrama para Setor INTERESSE</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_INTERESSE.png" alt="Organograma INTERESSE">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor MÉDIA</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_MÉDIA.png" alt="Organograma MÉDIA">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor ALIMENTOS</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_ALIMENTOS.png" alt="Organograma ALIMENTOS">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor MEDICAMENTOS</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_MEDICAMENTOS.png" alt="Organograma MEDICAMENTOS">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor DESCRIÇÃO DEPENDENTE</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_DESCRIÇÃO DEPENDENTE.png" alt="Organograma DESCRIÇÃO DEPENDENTE">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor INDEFINIDO</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_INDEFINIDO.png" alt="Organograma INDEFINIDO">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor AMBIENTAL</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_AMBIENTAL.png" alt="Organograma AMBIENTAL">
+                </div>
+                <div class="chart-container">
+                    <h3>Diagrama para Setor ALTA</h3>
+                    <img src="./Fluxogramas_Imagens_Graphviz/Organograma_Graphviz_Tree_Vertical_RegionThenRisk_ALTA.png" alt="Organograma ALTA">
+            
+        </section>
+
+        <section id="downloads">
+            <h2>8. Download de Arquivos</h2>
+            <p>Aqui você pode baixar os arquivos .XLSX contendo os dados detalhados por setor e região.</p>
+            <ul>
+                <li><a href="./Downloads/Estabelecimentos do Setor ALIMENTOS.xlsx" download>Estabelecimentos do Setor ALIMENTOS (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor MÉDIA.xlsx" download>Estabelecimentos do Setor MÉDIA (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor INTERESSE.xlsx" download>Estabelecimentos do Setor INTERESSE (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor MEDICAMENTOS.xlsx" download>Estabelecimentos do Setor MEDICAMENTOS (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor DESCRIÇÃO DEPENDENTE.xlsx" download>Estabelecimentos do Setor DESCRIÇÃO DEPENDENTE (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor INDEFINIDO.xlsx" download>Estabelecimentos do Setor INDEFINIDO (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor AMBIENTAL.xlsx" download>Estabelecimentos do Setor AMBIENTAL (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos do Setor ALTA.xlsx" download>Estabelecimentos do Setor ALTA (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos da Região CENTRO.xlsx" download>Estabelecimentos da Região CENTRO (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos da Região SUL DA ILHA.xlsx" download>Estabelecimentos da Região SUL DA ILHA (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos da Região CONTINENTE.xlsx" download>Estabelecimentos da Região CONTINENTE (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos da Região NORTE DA ILHA.xlsx" download>Estabelecimentos da Região NORTE DA ILHA (XLSX)</a></li>
+                <li><a href="./Downloads/Estabelecimentos da Região LESTE DA ILHA.xlsx" download>Estabelecimentos da Região LESTE DA ILHA (XLSX)</a></li>
+                
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p style="color: #fff;">Análise de Dados VISA</p>
+    </footer>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao Topo">Topo</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function(){scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // For smooth scrolling
+        }
+    </script>
+</body>
+</html>
