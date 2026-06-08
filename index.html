@@ -24,6 +24,7 @@
             <li><a href="#population-growth">Crescimento Populacional</a></li>
             <li><a href="#flowcharts">Diagramas</a></li>
             <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#obs">Observações</a></li>
         </ul>
     </nav>
 
@@ -49,13 +50,20 @@
                 <h3>CNAEs/Atividades por Nível de Risco</h3>
                 <img src="./CNAEs Atividades por Nível de Risco.png" alt="CNAEs Atividades por Nível de Risco">
             </div>
-            <div class="chart-container">
+            <div class="barchart-container">
                 <h3>Distribuição de CNAEs/Atividades por Setor de Fiscalização</h3>
                 <img src="./Distribuicao de CNAEs por Setor de Fiscalizacao_BarChart.png" alt="Distribuição de CNAEs por Setor de Fiscalização">
             </div>
             <div class="table-container">
                 <h3>Tabela de Estabelecimentos por Setor</h3>
                 <iframe src="./Tabela de Estabelecimentos por Setor.html" frameborder="0" width="100%" height="400px"></iframe>
+                <h3 style="text-align: justify;">Apesar da aplicação de várias regras para classificação por setor, para 6% dos estabelecimentos não foi possível determinar um setor específico. Os principais motivos são:</h3>
+                <ul>
+                    <li>Estabelecimentos com atividades muito distintas (ex: lanchonete e atividade odontológica) = Setor <strong style="font-weight: bold;">INDEFINIDO</strong></li> 
+                    <li>Estabelecimentos com multiplos CNAEs de saúde (ex: restrita a consultas, exames complementares, cirúrgicos, hospitalar, pronto-socorro...) = Setor <strong style="font-weight: bold;">INDEFINIDO</strong></li> 
+                <li>Estabelecimentos com um único CNAE MULTI RISCO = Setor <strong style="font-weight: bold;">DESCRIÇÃO DEPENDENTE</strong></li>          
+                </ul>
+            
             </div>
         </section>
 
@@ -113,7 +121,7 @@
                     <iframe src="./Tabelas_por_Regiao/Tabela_Estabelecimentos_Setor_Risco_Regiao_LESTE DA ILHA.html" frameborder="0" width="100%" height="400px"></iframe>
                 </div>
             </div>
-            <div class="chart-container">
+            <div class="barchart-container">
                 <h3>Contagem de Tabacarias por Região</h3>
                 <img src="./Graficos_Gerais/Contagem_Tabacarias_por_Regiao.png" alt="Tabacarias por Região">
             </div>
@@ -169,7 +177,7 @@
                 <h3>Crescimento Acumulado do Número de Estabelecimentos por Ano</h3>
                 <img src="./Graficos_Gerais/Crescimento_Acumulado_Estabelecimentos.png" alt="Crescimento Acumulado Estabelecimentos">
             </div>
-            <div class="chart-container">
+            <div class="barchart-container">
                 <h3>Distribuição da População por Região</h3>
                 <img src="./Populacao_por_regiao_barras.png" alt="População por Região">
             </div>
@@ -217,6 +225,7 @@
         <section id="downloads">
             <h2>8. Download de Arquivos</h2>
             <p>Aqui você pode baixar os arquivos .XLSX contendo os dados detalhados por setor e região.</p>
+            <div class="table-container">
             <ul>
                 <li><a href="./Downloads/Estabelecimentos do Setor ALIMENTOS.xlsx" download>Estabelecimentos do Setor ALIMENTOS (XLSX)</a></li>
                 <li><a href="./Downloads/Estabelecimentos do Setor MÉDIA.xlsx" download>Estabelecimentos do Setor MÉDIA (XLSX)</a></li>
@@ -233,12 +242,27 @@
                 <li><a href="./Downloads/Estabelecimentos da Região LESTE DA ILHA.xlsx" download>Estabelecimentos da Região LESTE DA ILHA (XLSX)</a></li>
                 
             </ul>
+            </div>
         </section>
+
+        <section>
+            <h2 id="obs">9. Observações</h2>
+            <p>Para uma análise mais fidedigna, alguns aspectos limitantes não podem deixar de ser considerados:</p>
+            <div class="table-container">
+        <ul>
+            <li>CNPJs com CNAEs "pró-forma", cuja atividade não é efetivamente desenvolvida.</li>
+            <li>CNPJs que desenvolvem atividade em estabelecimentos de terceiros.</li>
+            <li>CNAEs com "subtipos" (múltiplas descrições de atividade de VISA), extrapolando a descrição do IBGE.</li>
+            <li>Ausência de estabelecimentos de profissionais liberais - CPFs.</li>
+        </ul>
+        </div>
+    </section>
 
     </main>
 
     <footer>
-        <p style="color: #fff;">Análise de Dados VISA</p>
+        <p style="color: #fff;">Análise de Dados VISA 
+        </p>
     </footer>
 
     <!-- Botão de Voltar ao Topo -->
